@@ -27,13 +27,13 @@ while executando:
             depositos.append(valor)
             print(f"Depósito de R$ {valor:.2f} realizado com sucesso!")
         else:
-            print("❌ Operação falhou! O valor informado é inválido.")
+            print("❌ Operação falhou! O valor depositado precisa ser positivo.")
 
     elif opcao == "s":
         valor = float(input("Informe o valor do saque: "))
 
         if valor <= 0:
-            print("❌ Operação falhou! O valor informado precisa ser positivo.")
+            print("❌ Operação falhou! O valor para saque precisa ser positivo.")
 
         elif valor > saldo:
             print("❌ Operação falhou! Você não tem saldo suficiente.")
@@ -72,4 +72,4 @@ while executando:
         executando = False 
 
     else:
-        print("❌ Opção inválida! Tente novamente.")
+        print("❌ Opção inválida! Tente novamente por gentileza.")
